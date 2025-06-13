@@ -9,6 +9,7 @@ if (!process.env.WEAVIATE_API_KEY) {
   throw new Error("WEAVIATE_API_KEY environment variable is required");
 }
 
+//Connect to Weaviate
 export const weaviateClient = weaviate.client({
   scheme: "https",
   host: process.env.WEAVIATE_HOST!,
