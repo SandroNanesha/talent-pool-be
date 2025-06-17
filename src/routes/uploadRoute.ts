@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import { fileUpload } from "../src/utils";
-import { processAndStoreFile } from "../src/services/fileProcessor";
+import { fileUpload } from "../utils";
+import { processAndStoreFile } from "../services/fileProcessor";
 
 export const router = express.Router();
 
